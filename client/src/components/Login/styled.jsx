@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const  Fondo = styled.body`
     background: #7dbaed;
     width: 100vw;
@@ -43,7 +43,13 @@ export const Input = styled.input`
     width: 40%;  
     height: 10%;
 `;
-export const Button = styled.button`
+
+export const Navigation = styled(Link)`
     width: 30%;
     height: 5%;
+    text-decoration: none;
+`;
+export const Button = styled.button`
+    width: auto;
+    height: auto;
 `;

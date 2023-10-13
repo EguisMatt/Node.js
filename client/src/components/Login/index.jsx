@@ -1,6 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
-import { Fondo, ContainerPrincipal, Title, Containerinput, Input, Label, Button } from "./styled";
-
+import { Fondo, ContainerPrincipal, Title, Containerinput, Input, Label, Button, Navigation } from "./styled";
 const Login = () => {
     return(
         <Fondo>
@@ -13,7 +13,9 @@ const Login = () => {
                     <Input placeholder="Contraseña"/>
                 </Containerinput>
                     <Button>Login</Button>
-                    <Button>registrate</Button>
+                    <Navigation to="/register">
+                    Register
+                    </Navigation>
             </ContainerPrincipal>
         </Fondo>
     )
