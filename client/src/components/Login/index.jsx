@@ -1,5 +1,5 @@
 import React from "react";
-import { Fondo, ContainerPrincipal, Title, Containerinput, Input } from "./styled";
+import { Fondo, ContainerPrincipal, Title, Containerinput, Input, Label, Button } from "./styled";
 
 const Login = () => {
     return(
@@ -7,9 +7,13 @@ const Login = () => {
             <ContainerPrincipal>
                 <Title>Login</Title>
                 <Containerinput>
-                    <Input></Input>
-                    <Input></Input>
+                    <Label>Usuario</Label>
+                    <Input placeholder="Correo"/>
+                    <Label>Contraseña</Label>
+                    <Input placeholder="Contraseña"/>
                 </Containerinput>
+                    <Button>Login</Button>
+                    <Label>Registrate</Label>
             </ContainerPrincipal>
         </Fondo>
     )

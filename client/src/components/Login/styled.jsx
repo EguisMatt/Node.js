@@ -29,16 +29,21 @@ export const Title = styled.h1`
 `;
 export const Containerinput = styled.div`
     width: 90%;
-    height: 50%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: blue;
 `;
 
+export const Label = styled.label`
+    
+`
 export const Input = styled.input`
     width: 40%;  
     height: 10%;
-
-`
+`;
+export const Button = styled.button`
+    width: 30%;
+    height: 5%;
+`;
