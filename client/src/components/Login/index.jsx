@@ -14,7 +14,7 @@ const Login = () => {
                 </Containerinput>
                     <Button>Login</Button>
                     <Navigation to="/register">
-                    Register
+                        Register
                     </Navigation>
             </ContainerPrincipal>
         </Fondo>

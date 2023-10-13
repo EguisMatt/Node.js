@@ -48,8 +48,9 @@ export const Navigation = styled(Link)`
     width: 30%;
     height: 5%;
     text-decoration: none;
+    color: black;
 `;
 export const Button = styled.button`
-    width: auto;
-    height: auto;
+    width: 30%;
+    height: 5%;
 `;
