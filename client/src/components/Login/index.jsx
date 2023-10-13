@@ -13,7 +13,7 @@ const Login = () => {
                     <Input placeholder="Contraseña"/>
                 </Containerinput>
                     <Button>Login</Button>
-                    <Label>Registrate</Label>
+                    <Button>registrate</Button>
             </ContainerPrincipal>
         </Fondo>
     )
