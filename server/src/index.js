@@ -1,8 +1,9 @@
 import  express  from "express";
 import cors from "cors";
 import { router } from "./router/user.routes.js";
+import { PORT } from "./config.js";
 
-const port = 3005
+const port = PORT
 
 /*levantando el servidor*/
 const app = express();

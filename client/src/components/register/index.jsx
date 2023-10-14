@@ -23,7 +23,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    Axios.post(`http://localhost:3005/user`,
+    Axios.post(`${process.env.REACT_APP_URL_FRONTEND}/user`,
       formData)
     
     console.log('Form data:', formData);
