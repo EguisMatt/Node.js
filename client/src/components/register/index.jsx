@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { Fondo,Form,Label,Input,Button } from './styled';
+import Axios from "axios"
+
 
 const Register = () => {
   const [formData, setFormData] = useState({
-    username: '',
-    email: '',
+    name_user: '',
+    edad: '',
     password: '',
+    email_user:''
   });
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,21 +20,35 @@ const Register = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aquí puedes realizar acciones adicionales, como enviar los datos a un servidor.
+    
+    Axios.post(`http://localhost:3005/user`,
+      formData)
+    
     console.log('Form data:', formData);
   };
 
   return (
     <Fondo>
-    <Form onSubmit={handleSubmit}>
+    <Form >
       <div>
         <Label>Username:</Label>
         <Input
           type="text"
-          name="username"
-          value={formData.username}
+          name="name_user"
+          required
+          value={formData.name_user}
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <Label>age:</Label>
+        <Input
+          type="number"
+          name="edad"
+          required
+          value={formData.edad}
           onChange={handleChange}
         />
       </div>
@@ -38,8 +56,9 @@ const Register = () => {
         <Label>Email:</Label>
         <Input
           type="email"
-          name="email"
-          value={formData.email}
+          required
+          name = "email_user"
+          value={formData.email_user}
           onChange={handleChange}
         />
       </div>
@@ -48,11 +67,13 @@ const Register = () => {
         <Input
           type="password"
           name="password"
+          required
           value={formData.password}
           onChange={handleChange}
         />
-      </div><br />
-      <Button type="submit">Register</Button>
+      </div>
+      <br />
+      <Button type="submit" onClick={handleSubmit}>Register</Button>
     </Form>
     </Fondo>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import {Fondo, ContainerPrincipal, Title, Containerinput, Label, Input, Button} from "../Login/styled" 
+import {Fondo, ContainerPrincipal, Title, Containerinput, Label, Input, Button} from "../login/styled.jsx" 
 const Recovery = () => {
     return (
         <Fondo>

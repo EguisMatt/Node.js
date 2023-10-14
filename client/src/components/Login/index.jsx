@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
-import { Fondo, ContainerPrincipal, Title, Containerinput, Input, Label, Button, Navigation } from "./styled";
+import { Fondo, ContainerPrincipal, Title, Containerinput, Input, Label, Button, Navigation } from "./styled.jsx";
 const Login = () => {
     return(
         <Fondo>

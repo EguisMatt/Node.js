@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Register from "./register/index";
-import Login from "./Login";
+import Login from "./login";
 import Recovery from "./Recovery";
 
 const IndexRouter = () => {
